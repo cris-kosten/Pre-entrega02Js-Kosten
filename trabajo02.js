@@ -62,10 +62,17 @@ while (seleccion != 'si' && seleccion != 'no') {
 if (seleccion == 'si') {
     alert('Aprovecha nuestros cursos disponibles para vos!!!! ');
     let todosLosCursos = cursos.map((cursos) => '\n ' + cursos.nombre + '\n');
+    
+    //mostramos cursos disponibles
+    alert('ah continuacion les mostraremos los cursos disponibles:');
     alert(todosLosCursos.join('-'));
+
+    // le indicamos que eliga una opcion
+    alert('Por favor a continuacion  ingrese del 1 al 5 el curso que quiera seleccionar : !!!');
 
 
     // le damos las opciones a elegir al usuario
+    
     let opcion = prompt(todosLosCursos + '\n');
 
     switch (opcion) {
@@ -97,7 +104,7 @@ if (seleccion == 'si') {
 
 // opcion de sellecionar un curso 
 while (seleccion != 'no') {
-    let cursos = prompt('Selecciona el  curso ah tu carrito');
+    let cursos = prompt('ingresa el nombre del curso para continuar');
     let precio = 0;
 
     if (cursos == 'excel avanzado' ||
